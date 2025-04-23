@@ -3,6 +3,7 @@ class Conjunto:
         self.__conjunto = conjunto
 
     def promedio(self):
-        if not self.__conjunto:
+        if len(self.__conjunto) == 1:
+            return self.__conjunto[0]
+        else:
             return None
-        return sum(self.__conjunto) / len(self.__conjunto)
